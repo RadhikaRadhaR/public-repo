@@ -1,6 +1,7 @@
 node {
       for (i=0; i<2; i++) { 
-            stage {"Stage #"+i}
+            stage ("Stage #"+i)
+            {
            print 'This is the stage #' +i
            if (i==0)
            {
@@ -12,4 +13,5 @@ node {
                echo 'Running on Stage #1'
            }
       }
+}
 }
